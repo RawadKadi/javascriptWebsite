@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" href="welcome.css">
+   
+    <head>
+        <title>Welcome Rawad Al Kadi</title>
+        <div class="tab">
+            <h1 class="heading" style="font-size: 40px;" >We are here to help you</h1>
+            <ul class="right tab" style="list-style-type: none;">
+                <li class="list">
+                    <a class="list1" href="#" id="view" onclick="tutorials()">Tutorials</a>
+                      <a class="list3" href="#" id="content" onclick="contact()">Contact us</a>
+                    
+                   
+                </li>
+            </ul>
+             <div class="Contact-popup" id="openContact">
+    <script type="text/javascript">
+             document.getElementById("myForm").setAttribute("hidden","");
+        </script>
+       
+         <form action="/action_page.php" class="form-contact-container">
+            <h1 class="contact-us">Contact us via: </h1>
+        <button type="button" class="cnct-Facebook" onclick="location.href='https://www.facebook.com/r.php'">Facebook</button>
+        <button type="button" class="cnct-Instagram" onclick="location.href='https://www.instagram.com/accounts/emailsignup/?hl=en'">Instagram</button><br>
+ 
+       <button type="button" class="button cancel" onclick="closeContact()">Close</button>
+   </form>
+</div>
+            <br><img id="myImg" src="#">
+<label class="custom-file-upload">
+    <input type="file"/>
+    Edit Image
+</label>
+<div class="container" onclick="menuIcon(this)">
+
+<div class="dropdown">
+  <div  onclick="menu()" class="dropbtn">
+  	<div class="bars">
+    <div class="bar1" onclick="menu()" ></div>
+  <div class="bar2"onclick="menu()"></div>
+  <div class="bar3" onclick="menu()"></div></div>
+
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" onclick="Logout()" id="Logout">Logout</a>
+    
+    </div>
+  </div>
+</div>
+</div>
+        </div>
+      
+
+    </head>
+    <body>
+   <div class="bg-img"></div>
+    <div class="bg-txt" id="glad">
+        <h1>We are glad to make you a part of our professional team </h1>
+        <p>With this program you will be able to organize your work in javascipt.</p>
+    </div>
+    <h3 class="introHeader">Introduction to C++:</h3>
+    <object class ="youtubeVid" data="https://www.youtube.com/embed/OTroAxvRNbw"
+   ></object>
+
+<div class="slideshow-container fade">
+
+        <!-- Full images with numbers and message Info -->
+        <div class="Containers">
+          <div class="MessageInfo">1 / 3</div>
+          <img src="C:\Users\dell\Desktop\wallpapers\wallpapers\c++1.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+      
+        <div class="Containers">
+          <div class="MessageInfo">2 / 3</div>
+          <img src="C:\Users\dell\Desktop\wallpapers\wallpapers\c++2.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+      
+        <div class="Containers">
+          <div class="MessageInfo">3 / 3</div>
+          <img src="C:\Users\dell\Desktop\wallpapers\wallpapers\c++3.jpg" style="width:100%">
+          <div class="Info"></div>
+        </div>
+      
+        <!-- Back and forward buttons -->
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The circles/dots -->
+      <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+      </div> 
+      <div class="slideshow-text" id="slideshow-text">
+      	<h1>
+      		What is C++?
+      	</h1>
+      	<p> C++ was designed with an orientation toward system programming and embedded, resource-constrained software and large systems, with performance, efficiency, and flexibility of use as its design highlights. C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, including desktop applications, video games, servers (e.g. e-commerce, web search, or databases), and performance-critical applications (e.g. telephone switches or space probes)</p>
+      </div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form action="/action_page.php" class="form-contact-container">
+            <h1 class="contact-us">Contact us via: </h1>
+        <button type="button" class="cnct-Facebook" onclick="location.href='https://www.facebook.com/r.php'">Facebook</button>
+        <button type="button" class="cnct-Instagram" onclick="location.href='https://www.instagram.com/accounts/emailsignup/?hl=en'">Instagram</button><br>
+  </div>
+    </body>
+    </html>
+    <script type="text/javascript">
+    	window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+          var img = document.querySelector('img');
+          document.getElementById("cnct-Facebook")=value;
+          img.onload = () => {
+              URL.revokeObjectURL(img.src);  
+          }
+
+          img.src = URL.createObjectURL(this.files[0]); 
+      }
+  });
+});
+    	function menu() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    
+    }
+  }
+
+}
+function menuIcon(x) {
+  x.classList.toggle("change");
+}
+function Logout(){
+window.location.href="practice_HTML.html";
+}
+var slidePosition = 1;
+SlideShow(slidePosition);
+
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow(n) {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  var circles = document.getElementsByClassName("dots");
+  if (n > slides.length) {slidePosition = 1}
+  if (n < 1) {slidePosition = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < circles.length; i++) {
+      circles[i].className = circles[i].className.replace(" enable", "");
+  }
+  slides[slidePosition-1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
+} 
+var slidePosition = 0;
+SlideShow();
+
+function SlideShow() {
+  var i;
+  var slides = document.getElementsByClassName("Containers");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slidePosition++;
+  if (slidePosition > slides.length) {slidePosition = 1}
+  slides[slidePosition-1].style.display = "block";
+  setTimeout(SlideShow, 3000); // Change image every 2 seconds
+} 
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("content");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+    var x = document.getElementById("glad");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+   modal.style.display = "block";
+    var x = document.getElementById("slideshow-text");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+  var x = document.getElementById("glad");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+   modal.style.display = "none";
+  var x = document.getElementById("slideshow-text");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function tutorials(){
+	 window.location.href="tutorials.html";}
+    </script>
+}

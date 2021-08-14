@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="sign_up.css">
+<head>
+	<title>
+		Sign Up
+	</title>
+</head>
+<body onload='document.form1.text1.focus()'>
+<form action="action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1 style="color: white;">Sign Up</h1>
+    <p style="color: white;">Please fill in this form to create an account.</p>
+    <hr>
+    <body onload='document.form1.text1.focus()'>
+<form name="form1">
+
+    <label for="email" style="color: white;"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email1" class="email" required id="email"></form>
+
+    <label for="psw" style="color: white;"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required id="pass" class="pass">
+
+    <label for="psw-repeat" style="color: white;"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required id="repeat_pass" class="rep-pass">
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p style="color: white;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn" style="color: white;" onclick="cancel()">Cancel</button>
+      <button type="submit" class="signupbtn" style="color: white;" onclick="signUp(document.form1.email1)">Sign Up</button>
+    </div>
+  </div>
+</form>
+<div class="bg-img"></div>
+<script type="text/javascript">
+
+	function signUp(inputText){var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+if(inputText.value.match(mailformat))
+{
+alert("Valid email address!");
+document.form1.email1.focus();
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+document.form1.email1.focus();
+return false;
+}
+}
+function cancel(){
+	window.location.href="practice_HTML.html";
+}
+
+	
+
+</script>
+</body>
+</html>

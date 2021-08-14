@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="tutorials.css">
+<head>
+	<title>C++ tutorials</title>
+	    <div class="tab" id="blur">
+            <h1 class="heading" style="font-size: 40px;" >RawKad</h1>
+            <ul class="right tab" style="list-style-type: none;">
+                <li class="list" >
+                   <a class="list1" href="#"  onclick="Profile()">Profile</a>
+
+                  <span class="chapters"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Chapters</span>
+                   
+                   
+                </li>
+            </ul>
+        
+        </div>
+</head>
+<body>
+
+ <p class="Classes" id="class">C++ Classes:</p>
+    <object class ="ClassVid" data="https://www.youtube.com/embed/JaSy-Z1u7AY"></object>
+    	<p class="Inheritance" id="inh">Inheritance and Polymorphism:</p></object>
+    <object class ="InhVid" data="https://www.youtube.com/embed/wrkkAOMp3Sw">
+    	
+    </object>
+    <p class="Template" id="temp">Function Template:</p>
+    <object class ="TempVid" data="https://www.youtube.com/embed/DHBli-deOSE"></object>
+    	 <p class="File" id="fil">File Processing:</p>
+    <object class ="FileVid" data="https://www.youtube.com/embed/ruf_pj2hGpw"></object>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#class">. C++ Classes</a>
+  <a href="#inh">. Inheritance and polymorphism</a>
+  <a href="#temp">. Function Template</a>
+  <a href="#fil">. File Processing</a>
+</div>
+</body>
+<script type="text/javascript">
+	function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function Profile(){
+	window.location.href="welcome.html";
+}
+</script>
+</html>

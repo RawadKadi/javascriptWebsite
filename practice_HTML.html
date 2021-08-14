@@ -1,0 +1,108 @@
+<html>
+    <link rel="stylesheet" href="practice_HTLM.css">
+   
+    <head style="font-family: Arial, Helvetica, sans-serif;"">
+        <title>First practice</title>
+        <div class="tab" id="blur">
+            <h1 class="heading" style="font-size: 40px;" >RawKad</h1>
+            <ul class="right tab" style="list-style-type: none;">
+                <li class="list" >
+                   
+
+                    <a class="list1" href="#"  onclick="readMore()">Read More</a>
+                   
+                    <a class="list3" href="#" id="content" onclick="contact()">Contact us</a>
+                   
+                </li>
+            </ul>
+        
+        </div>
+    </head>
+    <div class="bg-img"></div>
+    <div class="bg-txt">
+        <h1>Welcome to RawKad</h1>
+        <p>We will ensure best qualified information of C++ given between your hands</p>
+    </div>
+    <form class="login" action="/action_page.php">
+        <h1 class="login-head">Login</h1>
+       
+        <input type="text" id="email" name="" placeholder="Enter email" ><br><br>
+       
+        <input type="password" id="password" name="" placeholder="Enter password"><br><br>
+        <button class="submit_btn" type="button" onclick="login()"><span>login</span></button>
+ <button class="sign_up" type="button" onclick="signUp()"><span>Sign Up</span></button>
+       <!--  <input class="submit_btn" id="submit_btn" type="button" value="login" onclick="login()"> -->
+    </form>
+     <div class="hide">
+    <div class="form-popup" id="myForm" >
+<script type="text/javascript">
+             document.getElementById("myForm").setAttribute("hidden","");
+        </script>
+       
+         <form action="/action_page.php" class="form-container">
+        <h1 class="content">RawKad is responsible for teaching the basics of programming for anyone to learn and devlop basic skills for them to enter the tech field. Once you create an account in RawKad you'll be able to access the best programming information with the help of professional programmers and get certified according to the topic your choose. RawKad presents to you different programming languages as java, javascript, python and others... Once you're done with at least one, you will be officially entering the tech skills with RawKad. For proceeding please create an account for you to start, or just login if you have created an account previously.</h1>
+ 
+       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+   </form>
+   </div>
+
+<div class="Contact-popup" id="openContact">
+    <script type="text/javascript">
+             document.getElementById("myForm").setAttribute("hidden","");
+        </script>
+       
+         <form action="/action_page.php" class="form-contact-container">
+            <h1 class="contact-us">Contact us via: </h1>
+        <button type="button" class="cnct-Facebook" onclick="location.href='https://www.facebook.com/r.php'">Facebook</button>
+        <button type="button" class="cnct-Instagram" onclick="location.href='https://www.instagram.com/accounts/emailsignup/?hl=en'">Instagram</button><br>
+ 
+       <button type="button" class="button cancel" onclick="closeContact()">Close</button>
+   </form>
+</div>
+<div class="dropdown">
+  
+</div>
+</div>
+<body class="body"></body>
+
+
+
+<script type="text/javascript">
+    
+    function login(){                                                       //login function
+var email2 =document.getElementById("email").value;
+var password2=document.getElementById("password").value;
+if(email2=="rawad182002@hotmail.com"&&password2=="rawad.18"){
+alert("login successfully");
+window.location.href="welcome.html";
+return false;
+}else{
+    alert("login failed");
+
+}
+
+}
+function signUp(){
+    window.location.href="sign_up.html";
+}
+var body = document.getElementsByTagName('head');
+ var blur=document.getElementById('blur');
+function readMore(){
+ document.getElementById("myForm").style.display = "block";
+ 
+}
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+function contact(){
+    document.getElementById("openContact").style.display = "block";
+}
+function closeContact(){
+      document.getElementById("openContact").style.display = "none";
+}
+
+
+
+
+ </script>
+</html>

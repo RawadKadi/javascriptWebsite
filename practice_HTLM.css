@@ -1,0 +1,456 @@
+.bg-img{
+    background-image: url('C:\\Users\\dell\\Desktop\\wallpapers\\wallpapers\\signUp.jpg');
+filter: blur(8px);
+-webkit-filter: blur(8px);
+
+height: 100%;
+
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.list{
+    border: 0px;
+    border-color: blue;
+    text-align: right;
+   font-size: 16px;
+}
+.list :hover{
+    background-color: rgb(185, 94, 94);
+}
+.list :active{
+    background-color: white;
+    color: black;
+}
+.heading{
+    text-align: left;
+    
+   
+}
+.list1{
+   background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+  border-radius: 100px;
+ 
+  border: none;
+    padding: 20px;
+    margin: 20px;
+    border: 70px;
+transition: 1s;
+  
+ text-decoration: none;
+}
+
+
+.list2{
+   background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+  border-radius: 100px;
+ transition: 1s;
+  border: none;
+    padding: 20px;
+    margin: 20px;
+    border: 70px;
+
+  
+ text-decoration: none;
+
+
+}
+.list3{
+      background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+  border-radius: 100px;
+ transition: 1s;
+  border: none;
+    padding: 20px;
+    margin: 20px;
+    border: 70px;
+
+  
+ text-decoration: none;
+
+}
+.tab{
+    border: thin;
+    background-color: rgb(160, 13, 74);
+    padding: 2px;
+}
+
+.tab .heading{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color:  white;
+}
+.tab .list{
+   padding: 10px;
+   text-align: center;
+}
+.form-popup {
+display: none;
+  position:  absolute;
+
+ background-color: rgb(160, 13, 74);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  height: 40%;
+  padding: 20px;
+  text-align: center;
+  transition: 0.1px;
+}
+.Contact-popup {
+display: none;
+  position:  absolute;
+
+ background-color: rgb(160, 13, 74);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  height: 60%;
+  padding: 20px;
+  text-align: center;
+  transition: 0.1px;
+}
+.contact-us{
+	transition: 0.1px;
+	  font-size: 20px;
+color: white;
+}
+.content{
+	  transition: 0.1px;
+	  font-size: 20px;
+color: white;
+}
+.form-contact-container .button{
+	 background-color: #04AA5D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  margin: 20px;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 100px;
+}.form-contact-container .button:hover{
+	transition: 20px;
+	background-color: silver;
+	transition: 0.5s;
+}
+.form-contact-container .cnct-Facebook{
+	 margin: 40px;
+	 background-color: #046686;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-contact-container .cnct-Facebook:hover{
+	 background-color: #1988AD;
+	 border-radius: 40px;
+	 transition: 0.5s;
+}
+.form-contact-container .cnct-Instagram{
+	 margin: 40px;
+	 background-color: #FC4400;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-contact-container .cnct-Instagram:hover{
+	 background-color: #F26C05;
+	 border-radius: 40px;
+	 transition: 0.5s;
+}
+.form-contact-container .cancel {
+background-color: rgb(185, 94, 94);
+}
+
+/* Add some hover effects to buttons */
+.form-contact-container .button:hover, .open-button:hover {
+  opacity: 1;
+}
+.form-container .btn {
+  background-color: #04AA5D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(185, 94, 94);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.bg-txt{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.login{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px outset #f1f1f1;
+    position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 30%;
+  height: 40%;
+  padding: 15px;
+  text-align: center;
+}
+.login-head{
+   bottom: 10%;
+}
+.submit_btn{
+    background-color: rgb(14, 24, 54);
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login :hover{
+    background-color: rgb(185, 94, 94);
+}
+.login :active{
+    background-color: white;
+    color: black;
+}
+.login input [type ="text"],.login input[type="text"],.login input[type="password"]{
+	border:0;
+	background:none;
+	display:block;
+	margin:15px auto;
+	text-align: center;
+	border:3px solid white;
+	padding: 7px 2px;
+	width: 350px;
+	outline: none;
+	
+	border-radius: 24px;
+	transition: 0.25px;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+
+}
+.login input [type ="text"]:focus,.login input[type="text"]:focus,.login input[type="password"]:focus{
+	border:0;
+	background:none;
+	display:block;
+	margin:15px auto;
+	text-align: center;
+	border:3px solid white;
+	padding: 7px 2px;
+	width: 300px;
+transition: 0.5s;
+	outline: none;
+	
+	border-radius: 24px;
+	transition: 0.25px;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+}
+
+.login input [type ="text"]:hover,.login input[type="text"]:hover,.login input[type="password"]:hover{
+	border:0;
+	background:none;
+	display:block;
+	margin:15px auto;
+	text-align: center;
+	border:3px solid white;
+	padding: 7px 2px;
+	width: 325px;
+transition: 0.5s;
+	outline: none;
+	
+	border-radius: 24px;
+	transition: 0.25px;
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+}
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+
+.submit_btn {
+	background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+  border-radius: 100px;
+ 
+  border: none;
+  
+  text-align: center;
+  font-size: 28px;
+  padding: -10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.submit_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submit_btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submit_btn:hover span {
+  padding-right: 25px;
+}
+
+.submit_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+{box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.sign_up {
+  background-color:rgb(160, 13, 74);
+  color: white;
+  padding: 14px 20px;
+  margin: 11px 0;
+  border: none;
+  cursor: pointer;
+  width: 400px;
+  position: center;
+  opacity: 0.9;
+}
+
+.sign_up:hover {
+  opacity:1;
+  transition: 0.5s;
+  width: 450px;
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
