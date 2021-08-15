@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+</head>
+<body>
+<center>
+	 <form class="login" action="/action_page.php">
+	<table border="4" id="tab">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<td><input type="text" name="fname" id="fname" class="fname"></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Last Name</th>
+				<td><input type="text" name="lname" id="lname" onfocus=this.value=''></td>
+			</tr>
+			<tr>
+				<th>Email </th>
+				<td><input type="text" name="email" id="email" onfocus=this.value=''></td>
+			</tr>
+			<tr>
+				<th>Age</th>
+				<td><input type="text" name="age" id="age" onfocus=this.value=''></td>
+			</tr>
+			
+				
+				
+			
+		</tbody>
+	</table></form>
+	<form class="add" action="/action_page.php">
+<input type="button" name="button" class="btn" id="btn" value="Add" onclick="AddRow()" >
+</form>
+	<table border="4" id="show">
+		<thead>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Age</th>
+				
+			</tr>
+		</thead>
+		
+	</table>
+</center>
+<script type="text/javascript">
+	var list1=[];
+	var list2=[];
+	var list3=[];
+	var list4=[];
+	var deleteBtn;
+
+	var n=1;
+	var x=0;
+	function AddRow(){
+
+		var AddRown=document.getElementById('show');
+		var NewRow=AddRown.insertRow(n);
+
+		list1[x]=document.getElementById("fname").value;
+		
+		list2[x]=document.getElementById("lname").value;
+	
+		list3[x]=document.getElementById("email").value;
+		
+		list4[x]=document.getElementById("age").value;
+		
+		if(list1[x]||list2[x]||list3[x]||list4[x]!==''){
+			var cel1=NewRow.insertCell(0);
+		var cel2=NewRow.insertCell(1);
+		var cel3=NewRow.insertCell(2);
+		var cel4=NewRow.insertCell(3);
+		cel1.innerHTML=list1[x];
+		cel2.innerHTML=list2[x];
+		cel3.innerHTML=list3[x];
+		cel4.innerHTML=list4[x];
+		n++;
+		x++;
+
+		document.getElementById("fname").value='';
+		document.getElementById("lname").value='';
+		document.getElementById("email").value='';
+		document.getElementById("age").value='';
+			
+		}else{
+		alert("You must enter values");
+}
+	}
+	
+</script>
+</body>
+</html>
